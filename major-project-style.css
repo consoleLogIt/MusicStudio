@@ -615,7 +615,13 @@ box-shadow: 1px 1px 10px 1px rgb(43, 197, 180);
 
 /*@media*/
 
+@media screen and (min-width: 1100px){
+	#responsive-queue{
+	display: none;
+}
 
+
+}
 
 @media screen and (max-width: 1100px){
 	
@@ -697,8 +703,41 @@ main{
 	}
 }
 
-
-
+@media screen and (max-width: 900px){
+	header{
+    flex-direction: column;
+    align-items: center;
+	}
+	#favourites{
+		display: none;
+	}
+	#notification{
+		display: none;
+	}
+	#profile{
+		position: absolute;
+		top: 8%;
+		right: 35%;
+	}
+	#logo span{
+		display: none;
+	}
+	#logo{
+		margin-bottom:  10px;
+	}
+	#right{
+		width: 100%;
+		justify-content: center;
+	}
+	#right #search input{
+		width: 500px;
+	}
+	#player-left{
+		display: none;
+	}
+	#responsive-queue{
+    width: 40%;
+	}
 	
 
 @media screen and (max-width: 800px){
@@ -742,15 +781,6 @@ main{
  #latest-english-display div{
  	width: 25%;
  }
-}
-
-
-@media screen and (min-width: 700px){
-	#responsive-queue{
-	display: none;
-}
-
-
 }
 
 
