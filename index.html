@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Music App</title>
+      <link rel="stylesheet" type="text/css" href="major-project-style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+   </head>
+   <body>
+      <header>
+         <div id = "left" class="common-class-for-left-right">
+            <div id = "logo" class="relative">
+               <img src="play-button.png">
+               <span class="absolute text-class " style="font-size: 1.5rem; top: 20%; left :110%">Music</span>
+               <span class="absolute text-class" style="font-size: 1.3rem; top: 50%; left:110%">Studio</span>
+            </div>
+            <div id = "favourites" class="text-class">Favourites</div>
+         </div>
+         <div id  = "right" class="common-class-for-left-right">
+            <div id  = "search" class="relative"><label for= "search-bar"> <i id  = "search-icon" class="fas fa-search field-icon-size text-class absolute "></i></label><input type="text" id="search-bar" placeholder="search">
+               <label for= "search-bar"><i id = "mic-icon" class="fas fa-microphone-alt field-icon-size text-class absolute"></i></label>
+            </div>
+            <div id  = "notification" ><i id = "search-icon" class="far fa-bell fa-lg text-class" ></i></div>
+            <div id = "profile"><img src="IMG_20190713_085857_407.jpg" class="border-theme-class"></div>
+         </div>
+      </header>
+      <section id = "container">
+         <main class="inline-block">
+            <div id ="image-slider">
+               <input type="radio" name="slider" id="s1" >
+               <input type="radio" name="slider" id="s2" checked>
+               <input type="radio" name="slider" id="s3">
+               <label for="s1" id="slider1"></label>
+               <label for="s2" id="slider2"></label>
+               <label for="s3" id="slider3"></label>
+            </div>
+            <div id="latest-release">
+               <div class="text-class">
+                  <h3>Latest Release</h3>
+               </div>
+               <div class="container-display display-flex ">
+                  <div class="content-display display-flex">
+                     <div class="content-img absolute"><img src="https://c.saavncdn.com/editorial/JhakaasRemakes_20200519175522_150x150.jpg?bch=1589937990" class="border-theme-class">
+                     	<label for = "play">
+                     		<i id = "play-btn" class="fas fa-play fa-lg absolute text-class" ></i>
+                     	</label> 
+                     	<input type="checkbox" class="absolute" id ="play"> 
+
+                     </div>
+                     <div class="content-text text-class absolute">Dance +</div>
+                     <div class="content-icon text-class absolute">
+                        <label for="dropdown1"><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox"  id = "dropdown1">
+                        <ul class="dropmenu absolute border-theme-class">
+                           <li><a href="#"><i class="fas fa-play"></i>Play Now</a></li>
+                           <li><a href="#"><i class="fas fa-plus"></i>Add To Queue</a></li>
+                           <li><a href="#"><i class="fas fa-bookmark"></i>Add To Favourites</a></li>
+                           <li><a href="#"><i class="fas fa-info"></i>Get Info</a></li>
+                        </ul>
+
+                     </div>
+                  </div>
+                  <div class="content-display display-flex">
+                     <div class="content-img"><img src="https://c.saavncdn.com/160/Yalgaar-Hindi-2020-20200606192120-150x150.jpg" class="border-theme-class"></div>
+                     <div class="content-text text-class absolute">Yalgaar</div>
+                     <div class="content-icon text-class absolute">
+                        <label for="dropdown2" ><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox"  id = "dropdown2">
+                        <ul class="dropmenu absolute border-theme-class">
+                           <li><a href="#"><i class="fas fa-play"></i>Play Now</a></li>
+                           <li><a href="#"><i class="fas fa-plus"></i>Add To Queue</a></li>
+                           <li><a href="#"><i class="fas fa-bookmark"></i>Add To Favourites</a></li>
+                           <li><a href="#"><i class="fas fa-info"></i>Get Info</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="content-display display-flex">
+                     <div class="content-img"><img src="https://c.saavncdn.com/editorial/EkNumberHipHop_20200610071251_150x150.jpg" class="border-theme-class"></div>
+                     <div class="content-text text-class absolute">Yalgaar</div>
+                     <div class="content-icon absolute"><i class="fas fa-ellipsis-h text-class"></i></div>
+                  </div>
+                  <div class="content-display display-flex">
+                     <div class="content-img"><img src="https://c.saavncdn.com/editorial/Ishqiyaan_20200518104426_150x150.jpg" class="border-theme-class"></div>
+                     <div class="content-text text-class absolute">Ishqiyaan</div>
+                     <div class="content-icon absolute"><i class="fas fa-ellipsis-h text-class"></i></div>
+                  </div>
+               </div>
+            </div>
+         </main>
+         <aside id  ="Queue" class="inline-block relative">
+            <div>
+               <h3 class="text-class" style="font-size: 1.3rem;">Queue</h3>
+            </div>
+            <div id="queue-icon"  class="absolute">
+               <a href="#" class="text-class" style="text-decoration:none;">Queue<i class="fas fa-chevron-down" style="margin: 3px;"></i>
+               </a>
+            </div>
+            <div class="container-display display-flex">
+               <div class="content-display display-flex">
+                  <div class="content-img"><img src="https://c.saavncdn.com/editorial/Ishqiyaan_20200518104426_150x150.jpg" class="border-theme-class"></div>
+                  <div class="content-text text-class absolute">Ishqiyaan</div>
+                  <div class="content-icon absolute text-class"><i class="far fa-heart fa-lg"></i></div>
+               </div>
+               <div class="content-display display-flex">
+                  <div class="content-img"><img src="https://c.saavncdn.com/160/Yalgaar-Hindi-2020-20200606192120-150x150.jpg" class="border-theme-class"></div>
+                  <div class="content-text text-class absolute">Yalgaar</div>
+                  <div class="content-icon absolute text-class"><i class="far fa-heart fa-lg"></i></div>
+               </div>
+               <div class="content-display display-flex">
+                  <div class="content-img"><img src="https://c.saavncdn.com/929/Haaye-Rabba-Hindi-2020-20200607220027-150x150.jpg" class="border-theme-class"></div>
+                  <div class="content-text text-class absolute">Ishqiyaan</div>
+                  <div class="content-icon absolute text-class"><i class="far fa-heart fa-lg"></i></div>
+               </div>
+               <div class="content-display display-flex">
+                  <div class="content-img"><img src="https://c.saavncdn.com/editorial/PunjabseBollywood_20200227075015_150x150.jpg" class="border-theme-class"></div>
+                  <div class="content-text text-class absolute">Ishqiyaan</div>
+                  <div class="content-icon absolute text-class"><i class="far fa-heart fa-lg"></i></div>
+               </div>
+               <div class="content-display display-flex">
+                  <div class="content-img"><img src="https://c.saavncdn.com/artists/Khesari_Lal_Yadav_002_20190813071258_150x150.jpg" class="border-theme-class"></div>
+                  <div class="content-text text-class absolute">Ishqiyaan</div>
+                  <div class="content-icon absolute text-class"><i class="far fa-heart fa-lg"></i></div>
+               </div>
+               <div class="content-display display-flex">
+                  <div class="content-img"><img src="https://c.saavncdn.com/editorial/Ishqiyaan_20200518104426_150x150.jpg" class="border-theme-class"></div>
+                  <div class="content-text text-class absolute">Ishqiyaan</div>
+                  <div class="content-icon absolute text-class"><i class="far fa-heart fa-lg"></i></div>
+               </div>
+               <div class="content-display display-flex">
+                  <div class="content-img"><img src="https://c.saavncdn.com/editorial/Ishqiyaan_20200518104426_150x150.jpg" class="border-theme-class"></div>
+                  <div class="content-text text-class absolute">Ishqiyaan</div>
+                  <div class="content-icon absolute text-class"><i class="far fa-heart fa-lg"></i></div>
+               </div>
+               <div class="content-display display-flex">
+                  <div class="content-img"><img src="https://c.saavncdn.com/editorial/Ishqiyaan_20200518104426_150x150.jpg" class="border-theme-class"></div>
+                  <div class="content-text text-class absolute">Ishqiyaan</div>
+                  <div class="content-icon absolute text-class"><i class="far fa-heart fa-lg"></i></div>
+               </div>
+            </div>
+         </aside>
+         <section id = "popular-artist" >
+            <div>
+               <h3 class="text-class" style="font-size: 1rem;">Popular Artists</h3>
+            </div>
+            <div id="popular-artist-display" class="display-flex ">
+               <div>
+                 
+
+                  <img src="https://c.saavncdn.com/artists/Charlie_Puth_150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Charlie Puth</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/artists/Zayn_Malik_150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Zyan Malik</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/artists/Ed_Sheeran_150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Ed shareen</h4>
+               </div>
+               <div class="relative">
+                  <a href="singer_page.html"> <i class="fas fa-play fa-lg absolute text-class " style=" top: 30%; left: 43%;" ></i>
+                  </a>
+                  <img src="https://c.saavncdn.com/artists/Alan_Walker_002_20190507112228_150x150.jpg" class="border-theme-class">
+
+                  <h4 class="text-class center-class">Alan Walker</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/artists/Imagine_Dragons_150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Imagine Dragons</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/artists/One_Direction_150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">One Direction</h4>
+               </div>
+            </div>
+         </section>
+         <section id = "gener">
+            <div id = "gener-display" class="display-flex border-theme-class">
+               <div class="content-display"><img src="https://c.saavncdn.com/editorial/DadFavouritesRetroHindi_20200616064632_150x150.jpg?bch=1592317009"></div>
+               <div class="content-display"><img src="https://c.saavncdn.com/editorial/DesiRockSongs_20200611161702_150x150.jpg?bch=1592328049"></div>
+               <div class="content-display"><img src="https://c.saavncdn.com/editorial/RelaxedSundaysHindi_20200117054436_150x150.jpg" ></div>
+               <div class="content-display"><img src="https://c.saavncdn.com/editorial/Retro-70s&80s_saavn_radio_150x150.jpg" ></div>
+               <div class="content-display"><img src="https://c.saavncdn.com/editorial/DesiJazz_20200611161647_150x150.jpg?bch=1592328041" ></div>
+               <div class="content-display"><img src="https://c.saavncdn.com/editorial/YogaSeHiHoga_20191030133528_150x150.jpg?bch=1572469549" ></div>
+               <div class="content-display"><img src="https://c.saavncdn.com/editorial/SalaamSoldiers_20200114153638_150x150.jpg" ></div>
+            </div>
+         </section>
+         <section id  = "Radio" class="display-flex">
+            <div class="content-display"><img src="https://c.saavncdn.com/editorial/charts_Hindi90s_138586_20190906081847_500x500.jpg"></div>
+            <div class="content-display"><img src="https://c.saavncdn.com/editorial/charts_HindiChartbusters_180889_20190906081238_500x500.jpg"></div>
+            <div class="content-display"><img src="https://c.saavncdn.com/editorial/charts_Hindi00s_111137_20190906081657_500x500.jpg"></div>
+         </section>
+
+         <section id = "latest-english-section">
+              <div>
+               <h3 class="text-class" style="font-size: 1rem;">Latest-English</h3>
+            </div>
+
+             <div id="latest-english-display" class="display-flex ">
+               <div>
+                 
+
+                  <img src="https://c.saavncdn.com/editorial/RapGodEminem_99974731_20171017_150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Charlie Puth</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/722/Cheap-Thrills-English-2015-150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Cheap Thrills</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/509/Bad-Boy-feat-Luana-Kiara--English-2018-20180824060218-150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Bad Boys</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/292/Safari-English-2018-20181019011931-150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">safari</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/047/End-of-Time-English-2020-20200224043104-150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">End of Times</h4>
+               </div>
+             
+            </div>
+
+         </section>
+
+          <section id = "latest-hindi-section">
+              <div>
+               <h3 class="text-class" style="font-size: 1rem;">Latest-Hindi</h3>
+            </div>
+
+             <div id="latest-english-display" class="display-flex ">
+               <div>
+                 
+
+                  <img src="https://c.saavncdn.com/750/Ek-Tarfa-Hindi-2020-20200711220013-150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Ek Tarfa</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/editorial/MTPHeyShivShambhuhindiJaiShivShankar_20200611070151_150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Hey Shiv</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/editorial/Bestof2019Romance:Hindi_20191211142326_150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Bekhayali</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/editorial/Ishqiyaan_20200716082055_150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Dil Bechara</h4>
+               </div>
+               <div>
+                  <img src="https://c.saavncdn.com/182/Firse-Machayenge-Hindi-2020-20200214015709-150x150.jpg" class="border-theme-class">
+                  <h4 class="text-class center-class">Machayenge</h4>
+               </div>
+             
+            </div>
+
+         </section>
+
+      </section>
+
+
+
+
+          <footer id ="music-player" class="display-flex">
+           
+            <div id = "player-left" class="display-flex">
+             <img class ="border-theme-class"src="https://c.saavncdn.com/editorial/EkNumberHipHop_20200610071251_150x150.jpg "><div class="display-flex" style="flex-direction: column;"><span>Gully Gang</span><span>by divine</span></div><i class="far fa-heart"></i><i class="fas fa-exclamation"></i>
+          </div>
+          <div id  = "player-center" class="display-flex" >
+            <div id ="upper" class="display-flex">
+              
+               <i class="fas fa-random "></i>
+               <i class="fas fa-angle-double-left "></i>
+          
+          <i class="far fa-play-circle fa-3x" style="margin-top: 5px; cursor: pointer;"></i>
+
+            <i class="fas fa-angle-double-right "></i>
+            <i class="fas fa-reply "></i>
+        </div>
+        <div id = "lower"><input type="range" name="quantity" min="5" max="10"></div>
+
+          </div>
+          <div id ="player-right" class="display-flex"><i class="fas fa-stream"></i><i class="fas fa-tablet-alt"></i><i class="fas fa-volume-up"></i><input type="range" name="quantity" min="5" max="10"></div>
+          <div id  = "responsive-queue" class="display-flex">
+             
+           
+               <div>
+                  <div><img src="https://c.saavncdn.com/editorial/Ishqiyaan_20200518104426_150x150.jpg" class="border-theme-class"></div>
+               </div>
+               <div >
+                  <div><img src="https://c.saavncdn.com/160/Yalgaar-Hindi-2020-20200606192120-150x150.jpg" class="border-theme-class"></div>
+               </div>
+               <div>
+                  <div ><img src="https://c.saavncdn.com/929/Haaye-Rabba-Hindi-2020-20200607220027-150x150.jpg" class="border-theme-class"></div>
+               </div>
+               <div>
+                  <div><img src="https://c.saavncdn.com/editorial/PunjabseBollywood_20200227075015_150x150.jpg" class="border-theme-class"></div>
+               
+               </div>
+               <div>
+                  <div ><img src="https://c.saavncdn.com/artists/Khesari_Lal_Yadav_002_20190813071258_150x150.jpg" class="border-theme-class"></div>
+                  
+               </div>
+               <div >
+                  <div><img src="https://c.saavncdn.com/editorial/Ishqiyaan_20200518104426_150x150.jpg" class="border-theme-class"></div>
+            
+               </div>
+                 <div >
+                  <div><img src="https://c.saavncdn.com/editorial/Ishqiyaan_20200518104426_150x150.jpg" class="border-theme-class"></div>
+            
+               </div>
+                 <div >
+                  <div><img src="https://c.saavncdn.com/editorial/Ishqiyaan_20200518104426_150x150.jpg" class="border-theme-class"></div>
+            
+               </div>
+               </div>
+
+          </footer>
+     
+   </body>
+</html>

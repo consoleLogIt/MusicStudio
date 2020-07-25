@@ -1,0 +1,790 @@
+body{
+/*background: #0c1027; */
+background: #f5f5f5;
+	padding: 20px;
+	font-family: sans-serif;
+
+} 
+
+
+.relative{
+	position: relative;
+}
+.absolute{
+	position:  absolute;
+}
+.inline-block{
+	display: inline-block;
+}
+
+.inline{
+	display: inline;
+}
+.block{
+	display: block;
+}
+.display-flex{
+	display: flex;
+}
+.center-class{
+	text-align: center;
+}
+/*@-section*/
+
+
+header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	
+  
+}
+
+
+
+#left{
+	display: flex;
+}
+#favourites{
+	margin: 10px 0px 0px 100px
+}
+
+
+/*header-right-section*/
+
+#right{
+	display: flex;
+}
+#right #search input{
+    /*background-color: #12193e;*/
+    background-color: white;
+border-color: rgb(43, 197, 180);
+	border-radius: 7px;
+	padding: 10px 35px;
+	outline: 0px;
+	border:0px;
+  width: 250px;
+
+
+
+  
+
+
+}
+
+ 
+#right #search input[type=text]:focus {
+  box-shadow: 0 0 5px rgba(43, 197, 180, 1);
+  outline: 0;
+ transition: all .4s;
+  
+}
+.common-class-for-left-right div{
+	margin: 0px 30px;
+}
+
+#notification i{
+	margin-top:10px;
+}
+
+#notification i:hover{
+ 
+  text-shadow: 0px 0px 1px rgb(43, 197, 180);
+}
+
+#search #search-icon{
+	top:10px;
+	left:10px;
+}
+
+#search #mic-icon{
+	top: 10px;
+	right: 10px;
+}
+
+/*profile-img*/
+#profile img{
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	margin-top: -8px;
+
+
+
+}
+
+
+
+
+/*logo-img*/
+
+#logo img{
+	width: 80px;
+	height: 80px;
+}
+
+#logo #company-font{
+	width: 100px;
+	height: 30px;
+	margin-left: 15px;
+}
+
+.text-class{
+	color: rgb(43, 197, 180);
+	font-size: 15px;
+}
+
+
+#container{
+	margin: 100px 0px 0px 100px;
+	height: auto;
+
+	
+
+}
+
+/*image-slider*/
+[type=radio]{
+	display: none;
+}
+
+
+main{
+	width:60%;
+	height: auto;
+/*display: inline-block;*/
+
+}
+#image-slider{
+height: 300px;
+width:100%;
+position: relative;
+perspective: 1000px;
+transform-style: preserve-3d;
+}
+
+#image-slider label{
+	
+  margin: auto;
+  width: 55%;
+  height: 80%;
+	left: 0; right: 0;
+	position: absolute;
+	 transition: transform 0.4s ease;
+	 border-radius: 3px;
+	
+
+}
+
+#s1:checked ~ #slider2
+ {
+ 
+ transform: translate3d(70%,0,-200px);
+}
+#s1:checked ~ #slider3{
+
+ transform: translate3d(-70%,0,-200px);
+}
+
+#s2:checked ~ #slider1
+ {
+  
+  transform: translate3d(-70%,0,-200px);
+}
+#s2:checked ~ #slider3{
+transform: translate3d(70%,0,-200px);
+}
+
+#s3:checked ~ #slider1 
+ {
+ 
+  transform: translate3d(70%,0,-200px);
+}
+#s3:checked ~ #slider2{
+   transform: translate3d(-70%,0,-200px);
+
+}
+#s3:checked ~ #slider3, #s1:checked ~ #slider1,#s2:checked ~ #slider2 {
+  box-shadow: 0 5px 20px 0 rgba(43, 197, 180, 1);
+  transform: translate3d(0,0,0);
+
+}
+
+
+#slider1 { background-image: url("https://www.crictracker.com/wp-content/uploads/2018/02/Harrdy-Sandhu.jpg");
+background-size: cover;
+border:2px solid white;
+ }
+#slider2 { background-image: url("https://c.saavncdn.com/255/Black-Punjabi-2019-20191127024538-500x500.jpg");
+background-size: cover;
+border:2px solid white;
+}
+#slider3 { background-image: url("https://www.cheatsheet.com/wp-content/uploads/2020/01/BillieEilishtosingJamesBond.jpg"); 
+background-size: cover;
+border:2px solid white;
+}
+
+
+
+
+
+
+
+#latest-release .container-display{
+	
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+	/*justify-content: space-around;*/
+	
+	
+	
+
+}
+#latest-release .container-display div{
+margin: 0px 0px 10px 0px;
+}
+#latest-release .content-display img{
+	height: auto;
+	width: 90px;
+}
+
+#latest-release .content-display{
+	
+	width: 45%;
+position: relative;
+/*border:2px solid black;*/
+	
+}
+
+#latest-release .content-icon{
+	right: 0px;
+	top: -2px;
+}
+#latest-release .content-text{
+	top: 50%;
+	left: 40%;
+}
+
+.dropmenu {
+	list-style: none;
+visibility: hidden;
+	background-color: #f6f6f6;
+	top: 0px;
+	left: 0px;
+	width: 140px;
+	height: 0px;
+	z-index: 1;
+	padding: 5px;
+font-size: 0.8rem;
+	transition: all .2s ease;
+
+/*border:1px solid white;*/
+
+}
+
+#play-btn{
+	top: 40%;
+	left: 40%;
+	cursor: pointer;
+	
+}
+.dropmenu i{
+	margin-right: 10px;
+}
+.dropmenu li{
+	padding: 5px;
+	border-bottom: 2px solid white;
+	/*border-bottom:0.1px solid black;*/
+
+}
+.dropmenu li :hover{
+	opacity: 0.5;
+}
+.dropmenu a{
+
+	color: rgb(43, 197, 180);
+	text-decoration: none;
+	/*text-align: left;*/
+	
+
+}
+input[type=checkbox]{
+	display: none;
+}
+#latest-release .content-icon input[type=checkbox]:checked ~ .dropmenu{
+height: 100px;
+
+visibility: visible;
+
+
+}
+
+
+
+
+
+
+
+/*Queue-aside*/
+
+#Queue{
+	width: 25%;
+	vertical-align: top;
+	margin-left: 10%;
+	overflow: hidden;
+
+}
+
+#queue-icon{
+	right: 0px;
+	top :3%;
+}
+#Queue .container-display{
+	flex-wrap: wrap;
+}
+#Queue .content-display div{
+margin: 0px 0px 15px 0px;
+
+}
+#Queue .content-display{
+	width: 100%;
+	position: relative;
+
+
+	/*border:2px solid black;*/
+
+}
+
+#Queue .content-display img{
+	height: auto;
+	width: 35%;
+	transition: transform .2s;
+	margin-left: 5%;
+
+}
+#Queue .content-display img:hover{
+	transform: scale(1.1);
+}
+#Queue .border-theme-class{
+	border:1px solid white;
+}
+
+#Queue .content-icon{
+	right: 0px;
+	top: 8%;
+}
+#Queue .content-icon:hover{
+	transition: all .5s;
+	text-shadow: 0px 0px 5px rgb(43, 197, 180);
+}
+#Queue .content-text{
+	top: 12%;
+	left: 30%;
+}
+
+
+
+/*popular-artist*/
+
+#popular-artist{
+	width: 67%;
+
+}
+#popular-artist-display{
+	width: 100%;
+
+
+}
+
+#popular-artist-display .border-theme-class{
+	border: 2px solid white;
+}
+
+ #popular-artist-display img{
+ 	border-radius: 50%;
+ 	width: 95%;
+ 	height: auto;
+
+ }
+ #popular-artist-display h4{
+ 	font-weight: normal;
+ }
+ 
+
+
+
+
+
+
+
+#gener{
+	width: 64%;
+}
+
+#gener-display{
+	margin-top: 30px;
+	background-color: #dfe4ea;
+	width: 100%;
+	/*height:  110px;*/
+	padding:10px 0px 5px 15px;
+}
+#gener-display .content-display img{
+	/*border-radius: 50%;*/
+	border: 2px solid white;
+	border-radius: 5px;
+ 	width: 80%;
+ 	height: auto;
+ 	transition: transform .2s;
+
+}
+
+
+#Radio{
+	width: 70%;
+	margin-top: 50px;
+
+}
+#Radio  img{
+	width: 80%;
+ 	height: auto;
+ 	box-shadow: 1px 1px 10px 1px rgb(43, 197, 180);
+ 	transition: transform .2s;
+
+}
+
+#Radio  img:hover{
+	 transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+/*music-player*/
+
+#music-player{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height:12%;
+	background-color:#0c1027;
+	color: white;
+	z-index: 1;
+justify-content: space-around;
+
+}
+#player-left{
+	width:220px;
+}
+
+#player-left img{
+	width: 30%;
+	height: 90%;
+
+	margin:3px 0px 0px 0px;
+	border: 1px solid white;
+
+}
+
+#player-left span{
+	margin:15px 0px 0px 10px;
+
+}
+#player-left i{
+	padding: 15px 0px 0px 10px;
+}
+#player-center{
+	flex-direction: column;
+	align-items: center;
+
+
+}
+#player-center img{
+	padding: 5px;
+	width: 10%;
+	height: auto;
+}
+#player-center i{
+	margin:20px 0px 0px 15px;
+}
+#player-right i{
+	margin:20px 0px 0px 15px;
+}
+
+
+#lower input[type=range]{
+	width: 330px;
+	margin: 7px;
+}
+
+#player-right input[type=range]{
+	width: 80px;
+	margin:-15% 0px 0px 10px;
+}
+
+
+
+
+/*responsive queue*/
+#responsive-queue{
+	width: 30%;
+	align-items: center;
+	
+}
+
+#responsive-queue :first-child{
+	width: 90%;
+}
+
+#responsive-queue img{
+	width: 100%;
+	border: 1px solid white;
+
+}
+
+
+/*// latest-english tiles*/
+
+#latest-english-section{
+	margin-top: 30px;
+	width: 67%;
+
+}
+#latest-english-section h4{
+	font-weight: normal;
+}
+#latest-english-display div{
+	margin-right:  5px;
+	cursor: pointer;
+	width: 100%;
+
+}
+#latest-english-display img{
+	width: 96%;
+	height: auto;
+}
+
+
+/*latest-hindi-section*/
+
+#latest-hindi-section{
+	margin-bottom: 80px;
+	width: 67%;
+}
+#latest-hindi-section h4{
+	font-weight: normal;
+}
+#latest-hindi-display div{
+	margin-right: 5px;
+	cursor: pointer;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+/*misc-classes*/
+.border-theme-class
+{
+	border: 3px solid white;
+
+box-shadow: 1px 1px 10px 1px rgb(43, 197, 180);
+}
+
+
+
+
+
+/*@media*/
+
+@media screen and (min-width: 1100px){
+	#responsive-queue{
+	display: none;
+}
+
+
+}
+
+@media screen and (max-width: 1100px){
+	
+	#image-slider{
+		display: none;
+	}
+	#Queue{
+		display: none;
+	}
+	#popular-artist{
+		width: 100%;
+	}
+	#popular-artist .text-class{
+		text-align: center;
+		
+	}
+	#popular-artist-display{
+		justify-content: space-around;
+	}
+	#gener{
+
+		width: 97%;
+	
+
+	}
+	
+	#Radio{
+		margin-left: 40px;
+		width: 100%;
+			
+ 
+}
+
+
+
+
+main{
+	width: 100%;
+}	
+	#latest-release .container-display{
+		flex-wrap: nowrap;
+	justify-content: space-around;
+
+		
+	}
+	#latest-release .content-icon{
+		display: none;
+	}
+	#latest-release .content-display{
+		width: 10%;
+	}
+	#latest-release .content-text{
+		top: 90%;
+		left: 20%;
+	}
+	#latest-release .text-class{
+		text-align: center;
+	}
+
+	#container{
+		margin:0px;
+	}
+	#player-right{
+		display: none;
+	}
+
+	#latest-english-section{
+		width: 100%;
+	}
+	#latest-english-section .text-class{
+		text-align: center;
+	}
+	#latest-hindi-section{
+		width: 100%;
+
+	}
+	#latest-hindi-section .text-class{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 900px){
+	header{
+    flex-direction: column;
+    align-items: center;
+	}
+	#favourites{
+		display: none;
+	}
+	#notification{
+		display: none;
+	}
+	#profile{
+		position: absolute;
+		top: 8%;
+		right: 35%;
+	}
+	#logo span{
+		display: none;
+	}
+	#logo{
+		margin-bottom:  10px;
+	}
+	#right{
+		width: 100%;
+		justify-content: center;
+	}
+	#right #search input{
+		width: 500px;
+	}
+	#player-left{
+		display: none;
+	}
+	#responsive-queue{
+    width: 40%;
+	}
+	
+
+@media screen and (max-width: 800px){
+	#profile{
+		display:none;
+	}
+}
+@media screen and (max-width: 650px){
+	#right #search input{
+		width: 400px;
+	}
+ #lower{
+ 	display: none;
+ }
+ #music-player{
+ 	align-items: center;
+ }
+ #popular-artist-display{
+ 	flex-wrap: wrap;
+ }
+ #gener-display{
+ 	flex-wrap: wrap;
+ 	justify-content: space-evenly;
+
+ }
+ #Radio{
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+
+ }
+ #Radio .content-display{
+ 	width: 50%;
+ }
+ #latest-english-display{
+ 	flex-wrap: wrap;
+ 	justify-content: space-evenly;
+ }
+ #latest-english-display h4{
+ 	display: none;
+ }
+ #latest-english-display div{
+ 	width: 25%;
+ }
+}
+
+
+
+
+
+
