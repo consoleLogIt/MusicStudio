@@ -7,6 +7,7 @@ background: #f5f5f5;
 } 
 
 
+/*utility-classes*/
 .relative{
 	position: relative;
 }
@@ -29,14 +30,18 @@ background: #f5f5f5;
 .center-class{
 	text-align: center;
 }
+
+
 /*@-section*/
 
+
+
+/*header-section*/
 
 header{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	
   
 }
 
@@ -72,6 +77,7 @@ border-color: rgb(43, 197, 180);
 
 }
 
+/*header-right-section*/
  
 #right #search input[type=text]:focus {
   box-shadow: 0 0 5px rgba(43, 197, 180, 1);
@@ -134,7 +140,7 @@ border-color: rgb(43, 197, 180);
 	font-size: 15px;
 }
 
-
+/*main-container*/
 #container{
 	margin: 100px 0px 0px 100px;
 	height: auto;
@@ -155,6 +161,8 @@ main{
 /*display: inline-block;*/
 
 }
+
+/*slider-part*/
 #image-slider{
 height: 300px;
 width:100%;
@@ -228,6 +236,8 @@ border:2px solid white;
 
 
 
+/*latest-release section*/
+
 
 
 #latest-release .container-display{
@@ -241,6 +251,7 @@ border:2px solid white;
 	
 
 }
+
 #latest-release .container-display div{
 margin: 0px 0px 10px 0px;
 }
@@ -265,6 +276,8 @@ position: relative;
 	top: 50%;
 	left: 40%;
 }
+
+/*three-dots-menu*/
 
 .dropmenu {
 	list-style: none;
@@ -415,7 +428,7 @@ margin: 0px 0px 15px 0px;
 
 
 
-
+/*gener section*/
 
 
 #gener{
@@ -438,6 +451,8 @@ margin: 0px 0px 15px 0px;
  	transition: transform .2s;
 
 }
+
+/*Radio section*/
 
 
 #Radio{
@@ -487,6 +502,8 @@ margin: 0px 0px 15px 0px;
 justify-content: space-around;
 
 }
+
+/*left-part*/
 #player-left{
 	width:220px;
 }
@@ -661,9 +678,12 @@ box-shadow: 1px 1px 10px 1px rgb(43, 197, 180);
 main{
 	width: 100%;
 }	
+#latest-release{
+	width: 100%;
+}
 	#latest-release .container-display{
 		flex-wrap: nowrap;
-	justify-content: space-around;
+
 
 		
 	}
@@ -672,6 +692,7 @@ main{
 	}
 	#latest-release .content-display{
 		width: 10%;
+		
 	}
 	#latest-release .content-text{
 		top: 90%;
@@ -745,9 +766,13 @@ main{
 		display:none;
 	}
 }
-@media screen and (max-width: 650px){
+@media only screen and (max-width: 650px){
+
+#latest-release .container-display{
+	flex-wrap: wrap;
+}
 	#right #search input{
-		width: 400px;
+		width: auto;
 	}
  #lower{
  	display: none;
@@ -759,6 +784,7 @@ main{
  	flex-wrap: wrap;
  }
  #gener-display{
+ 	width: auto;
  	flex-wrap: wrap;
  	justify-content: space-evenly;
 
@@ -768,19 +794,31 @@ main{
  	justify-content: center;
 
  }
- #Radio .content-display{
- 	width: 50%;
- }
+ 
  #latest-english-display{
  	flex-wrap: wrap;
- 	justify-content: space-evenly;
+ 	justify-content: center;
  }
  #latest-english-display h4{
  	display: none;
  }
  #latest-english-display div{
- 	width: 25%;
+ 	width:  45%;
  }
+ #responsive-queue{
+ 	display: none;
+ }
+
+
+}
+
+@media screen and (max-width: 500px){
+	#latest-release{
+		/*margin-left: 20px;*/
+	}
+	#latest-release .content-display{
+		width: 34%;
+	}
 }
 
 
